@@ -165,7 +165,7 @@ How to use
 
     cosmo.Z(f_obs=None)
 
-    # get Energy
+    # get Energy-density
 
     cosmo.E(z=None)
 
