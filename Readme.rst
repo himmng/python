@@ -1,11 +1,17 @@
-======
-BPhase
-======
+======================
+Closure phase analysis 
+======================
 
+.. image:: http://ForTheBadge.com/images/badges/made-with-python.svg
    :target: https://www.python.org/
 
+::
 
-Closure phase analysis 
+    Specific functions for MWA data analysis
+
+::
+
+
 
 Requirements
 ------------
@@ -21,13 +27,20 @@ Requirements
 
 How to use
 ----------
-available classes Vis_Phase, Read_Numpy_Arr, Get_antenna_triplets, Cosmology,
-Spectrum, Noise_n_median_analysis
-
-
-Using the Vis_Phase class in python:
 
 ::
+
+    available classes Vis_Phase, Read_Numpy_Arr, Get_antenna_triplets, Cosmology,
+    Spectrum, Noise_n_median_analysis
+
+
+    Using the Vis_Phase class in python:
+
+
+
+::
+
+
 
     ## using Vis_phase 
 
@@ -50,8 +63,12 @@ Using the Vis_Phase class in python:
 
     Vis.create_vis_data(data_path=None, model_path=None, obsID=None, bll=None,\
     get_ants=None, ant_comp=None, path_to_save=None, loadfilenames=None, savefilename=None)
-    
+   
+   
+
 ::
+
+
 
     ## using Read_Numpy_Arr
 
@@ -112,7 +129,11 @@ Using the Vis_Phase class in python:
 
     Get_arr.get_incoherrent_bphase_data(path=None, obsIDs=None, bll=None)
     
+
+
 ::
+
+
 
     ## using Get_antenna_triplets
 
@@ -128,7 +149,11 @@ Using the Vis_Phase class in python:
 
     ant_info.getThreePointCombinations(self, baselines=None, labels=None, positions=None, length=None, angle=None, unique=True)
 
+
+
 ::
+
+
 
     ## using Cosmology class
 
@@ -144,7 +169,10 @@ Using the Vis_Phase class in python:
 
     cosmo.E(z=None)
 
+
 ::
+
+
 
     ## using Spectrum class
 
@@ -160,7 +188,11 @@ Using the Vis_Phase class in python:
 
     spec.get_delay_powerspectrum(delay_spectrum=None, if_incoherrent=None)
 
+
+
 ::
+
+
 
     ## using Noise_n_median_analysis class
 
@@ -181,7 +213,7 @@ Using the Vis_Phase class in python:
     N_analysis.get_3min_median_bphase(obsIDs=None, time=None, bll=None)
 
     # get mean and median statistics of bispectrum phase data and foreground simulation
-    
+
     N_analysis.get_median_bphase_data(obsIDs=None, index_close=None, index=None, bll=None)
 
 
